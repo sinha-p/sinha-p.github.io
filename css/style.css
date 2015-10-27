@@ -1,0 +1,212 @@
+html,body
+{
+    height:100%;
+    width: 100%;
+}
+a{
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+.navicondiv
+{
+    top:1em;
+    left:2em;
+    position:fixed;
+    width:2.5em;
+    height: 1.75em;
+    cursor:pointer;
+    z-index: 1000;
+}
+.navicondiv>div
+{
+    position:absolute;
+    top:0.5em;
+    left:0.15em;
+    width:2.5em;
+    height:0.25em;
+    background-color:#02d7c1;
+    box-shadow:0px 0.55em 0px #02d7c1,0px 1.1em 0px #02d7c1;
+}
+.slidemenu
+{
+    top:0px;
+    position:fixed;
+    height:100%;
+    width:20%;
+    background-color:#106190;
+    left:-25%;
+    z-index: 1000;
+}
+.slidemenucross{
+    cursor:pointer;
+    position: absolute;
+    right:4%;
+    top:2%;
+    width:1.5em;
+    height: 1.5em;
+    color:whitesmoke;
+}
+.slidemenuinner
+{
+    position: relative;
+    padding-left: 15%;
+    top:20%;
+    height:50%;
+    width:60%;
+    left:5%;
+    color:#fff ;
+    font-size: 1.5em;
+}
+.menulink{
+   height:20%;
+    padding:10px 0px 10px 0px;
+}
+#profilepic{
+    background-image: url('../images/dp.png');
+    background-position: center;
+    position:absolute;
+    top:20%;
+    left:45%;
+    border: 2px solid white;
+    border-radius: 50%;
+    height:8em;
+    width:8.5em;
+}
+
+#home {
+    background: url('../images/img2.jpg') fixed;
+    min-height: 1000px;
+    background-size: cover;
+    height: 800px;
+    margin: -10px  0px -10px;
+    max-width: 1920px;
+    position: relative;
+}
+.tagline{
+    position: absolute;
+    bottom:40%;
+    left:35%;
+    right:20%;
+    color:aliceblue;
+    font-family: cursive;
+    font-size: 1.7em;
+}
+#firstcontainer{
+    position: relative;
+    background-color: #ffffff;
+    margin: -10px 0px -10px;
+    height:100%;
+    min-width:100% ;
+    min-height: 80%;
+}
+#secondcontainer {
+    background: url('../images/img3.jpg') fixed;
+    background-size: cover;
+    min-height: 1000px;
+    height: 1000px;
+    margin: -10px  0px -10px;
+    max-width: 1920px;
+    position: relative;
+}
+#thirdcontainer
+{
+    position: relative;
+    background-color:#2B2B2B;
+    color: #fff;
+    margin: -50px 0px -10px;
+    height:100%;
+    min-width:100% ;
+    min-height: 100%;
+}
+#fourthcontainer{
+    position: relative;
+    background-color: #ffffff;
+    margin: -10px 0px -10px;
+    height:100%;
+    min-width:100% ;
+    min-height: 80%;
+}
+h1
+{
+    text-align: center;
+    color:#fff;
+}
+.contentcontainer
+{
+    position:absolute;
+    color:#000;
+    top:10%;
+    left:20%;
+    height:50%;
+    width:60%;
+    padding:5%;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align:justify;
+}
+.placardcontainer
+{
+    position:absolute;
+    color:#000;
+    top:10%;
+    left:5%;
+    height:100%;
+    width:90%;
+    padding:5%;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align:justify;
+}
+.placard{
+    height:100%;
+    width:25%;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    box-shadow:1px 1px 1px darkgray;
+}
+h3{
+    text-align: center;
+}
+.innerplacard
+{
+    width:100%;
+    height:80%;
+    color: whitesmoke;
+    padding-top: 5%;
+    padding-right:5%;
+    padding-left: 2%;
+    text-align: center;
+    position:relative;
+    bottom:-40%;
+    background-color: #35A2CA;
+}
+#skillcarousel{
+    top:30%;
+    left:20%;
+    width:70%;
+}
+.carousel-indicators{
+    top:105% !important;
+}
+.skilldiv{
+    height:15em;
+    width:15em;
+    border:1px solid #ffffff;
+    border-radius:50%;
+    overflow:hidden;
+    text-align: center;
+    padding:10% 2% 10% 2%;
+}
+.contactdiv{
+    position: relative;
+    left:12%;
+    margin-top: 10%;
+}
+.mail{
+    cursor: pointer;
+}
