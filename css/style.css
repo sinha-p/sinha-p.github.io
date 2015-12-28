@@ -49,18 +49,28 @@ a{
 .slidemenuinner
 {
     position: relative;
-    padding-left: 15%;
+/*    padding-left: 15%;*/
     top:20%;
-    height:50%;
-    width:60%;
-    left:5%;
+    height:100%;
+    width:100%;
+/*    left:5%;*/
     color:#fff ;
     font-size: 1.5em;
 }
-.menulink{
-   height:20%;
-    padding:10px 0px 10px 0px;
-}
+.menulink {
+        height: 10%;
+        border-top:1px solid #0d3c74;
+/*        border-bottom:1px solid #0d3c74;*/
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    }
+    .menulink:hover{
+        background: #217fb5;
+    }
+    .menulink a {
+        color: white;
+        text-decoration: none;
+    }
 #profilepic{
     background-image: url('../images/dp.png');
     background-position: center;
@@ -77,7 +87,7 @@ a{
     background: url('../images/img2.jpg') fixed;
     min-height: 1000px;
     background-size: cover;
-    height: 800px;
+    height: 100%;
     margin: -10px  0px -10px;
     max-width: 1920px;
     position: relative;
@@ -103,7 +113,7 @@ a{
     background: url('../images/img3.jpg') fixed;
     background-size: cover;
     min-height: 1000px;
-    height: 1000px;
+    height: 100%;
     margin: -10px  0px -10px;
     max-width: 1920px;
     position: relative;
@@ -116,7 +126,7 @@ a{
     margin: -50px 0px -10px;
     height:100%;
     min-width:100% ;
-    min-height: 100%;
+    min-height: 1000px;
 }
 #fourthcontainer{
     position: relative;
@@ -124,7 +134,7 @@ a{
     margin: -10px 0px -10px;
     height:100%;
     min-width:100% ;
-    min-height: 80%;
+    min-height: 1000px;
 }
 h1
 {
@@ -159,32 +169,6 @@ h1
     font-weight: 300;
     text-align:justify;
 }
-.placard{
-    height:100%;
-    width:25%;
-    color: #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    border: 1px solid whitesmoke;
-    box-shadow:1px 1px 1px darkgray;
-}
-h3{
-    text-align: center;
-}
-.innerplacard
-{
-    width:100%;
-    height:80%;
-    color: whitesmoke;
-    padding-top: 5%;
-    padding-right:5%;
-    padding-left: 2%;
-    text-align: center;
-    position:relative;
-    bottom:-40%;
-    background-color: #35A2CA;
-}
 #skillcarousel{
     top:30%;
     left:20%;
@@ -209,4 +193,55 @@ h3{
 }
 .mail{
     cursor: pointer;
+}
+
+.acadbox
+{
+    height:100%;
+    width:25%;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    box-shadow:1px 1px 1px darkgray;
+    overflow: hidden;
+    padding: 0px !important;
+}
+.acadplacard{
+    height:100%;
+    width:100%;
+    transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transition: transform 0.4s;
+}
+h3{
+    text-align: center;
+}
+.acadplacard .innerplacard
+{
+    width:100%;
+    height:80%;
+    color: whitesmoke;
+    padding-top: 5%;
+    padding-right:5%;
+    padding-left: 2%;
+    text-align: center;
+    position: absolute;
+    top:100%;
+    background-color: #35A2CA;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: rotateX(90deg);
+    transition: transform 0.4s,opacity 0.1s 0.3s;
+}
+.acadplacard:hover{
+    transform: translateY(-25%);
+}
+.acadplacard:hover .innerplacard
+{
+    transform: rotateX(0deg)  translateY(-55%);
+    opacity:1;
+    
+    transition: transform 0.4s,opacity 0.1s;
 }
