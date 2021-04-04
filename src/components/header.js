@@ -22,7 +22,7 @@ const links = [
         label: 'codepen',
     },
     {
-        href: '',
+        href: 'https://www.linkedin.com/in/pritam-sinha-a5856b10b/',
         label: 'linkedin',
     }
 ]
