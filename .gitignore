@@ -9,3 +9,9 @@ Desktop.ini
 $RECYCLE.BIN/
 # Others
 .idea
+
+# Dependencies
+node_modules/
+
+# cache
+.cache/
