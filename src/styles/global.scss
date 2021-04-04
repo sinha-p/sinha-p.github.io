@@ -1,0 +1,53 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', sans-serif, monospace;
+    background-color: $bg;
+    .container {
+        max-width: $container-max-width;
+        margin: 0 auto;
+        padding: 50px 0;
+        .title {
+            color: $textTitle;
+            font-size: 3em;
+        }
+        .sub-title {
+            font-size: 1.5em;
+            color: $subTitle;
+        }
+    }
+    .flex {
+        display: flex;
+    }
+    .w-50 {
+        width: 50%;
+        @media screen and (max-width: $sm) {
+            width: 100%;
+        }
+    }
+    .v-align {
+        align-items: center;
+    }
+    .f-right {
+        float: right;
+    }
+    .space-btw {
+        justify-content: space-between;
+    }
+    .no-a-style {
+        text-decoration: none;
+    }
+    &.dark {
+        background-color: $dark-bg;
+        .container {
+            .title {
+                color: $dark-textTitle;
+            }
+            .sub-title {
+                color: $dark-subTitle;
+            }
+        }
+    }
+}
